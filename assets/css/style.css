@@ -1,0 +1,25 @@
+body {
+    background-color: antiquewhite;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+    font-size: 4rem;
+
+}
+
+#mainContainer {
+    width: 75%;
+    border: 2px solid black;
+    margin: auto;
+    background-color: aliceblue;
+    padding: 2%;
+}
+
+button{
+    display: block;
+    margin: auto;
+    padding: 7px;
+    border-radius: 5px;
+}
