@@ -1,5 +1,15 @@
 body {
-    background-color: antiquewhite;
+    background: url(../images/stars.jpg)
+}
+
+#timer {
+    text-align: center;
+    border: 0;
+}
+
+#startButton{
+    margin-top: 3%;
+    
 }
 
 h1 {
@@ -9,10 +19,20 @@ h1 {
 
 }
 
+h2 {
+    margin-bottom: 5%;
+    font-size: 24px;
+    text-align: center;
+    font-weight: bolder;
+}
+
 #mainContainer {
-    width: 75%;
-    border: 2px solid black;
+    width: 85%;
+    /* border: 2px solid black; */
+    border-radius: 15px;
     margin: auto;
+    margin-bottom: 8%;
+    margin-top: 8%;
     background-color: aliceblue;
     padding: 2%;
 }
@@ -23,3 +43,69 @@ button{
     padding: 7px;
     border-radius: 5px;
 }
+
+#question {
+    margin: 5% 0 1% 0;
+    font-size: 20px;
+    font-weight: bolder;
+    
+}
+
+.questionTitle {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#timeRemaining {
+    border-radius: 5px;
+    border: 1px solid black;
+    margin: 2%;
+    padding: 2%;
+    background-color: aliceblue;
+    text-align: center;
+
+}
+
+#questionBox, #timer {
+    border-radius: 5px;
+    border: 1px solid black;
+    margin: 2%;
+    padding: 2%;
+    background-color: aliceblue;
+    
+}
+
+
+#questionDisplay {
+    border-radius: 5px;
+    border: 1px solid black;
+    margin: 5%;
+    padding: 20%;
+    background-color: aliceblue;
+    
+}
+
+.questionDisplay {
+    padding: 10px;
+    margin: 10%;
+}
+
+.option {
+    padding: 2%;
+    margin: 2%;
+}
+
+#headImage {
+    width: 30%;
+    margin: auto;
+    display: block;
+    
+}
+
+#title{
+    text-align: center;
+    /* margin-bottom: 25px; */
+    background: brown;
+    opacity: 50%;
+}
+
