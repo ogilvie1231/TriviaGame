@@ -5,11 +5,20 @@ body {
 #timer {
     text-align: center;
     border: 0;
+    font-weight: bolder;
+    font-size: 24px;
 }
 
 #startButton{
     margin-top: 3%;
     
+}
+
+#instructions {
+    font: bolder;
+    font-size: 35px;
+    text-align: center;
+    padding: 2%;
 }
 
 h1 {
@@ -68,10 +77,11 @@ button{
 
 #questionBox, #timer {
     border-radius: 5px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin: 2%;
     padding: 2%;
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
+    opacity: 30%;
     
 }
 
@@ -81,7 +91,7 @@ button{
     border: 1px solid black;
     margin: 5%;
     padding: 20%;
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
     
 }
 
@@ -109,3 +119,8 @@ button{
     opacity: 50%;
 }
 
+#correctAns, #incorrectAns, #unanswered {
+    margin: 4%;
+    font-weight: bolder;
+    text-align: center;
+}
