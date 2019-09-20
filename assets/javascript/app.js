@@ -1,7 +1,4 @@
-// Fresh Start
-
 $(document).ready(function () {
-
 
     $('#questionDisplay').hide();
     $('#timeRemaining').hide();
@@ -9,9 +6,7 @@ $(document).ready(function () {
     $('#questionBox').hide();
     $('#endPage').hide();
 
-
     // Creating a game object
-    // setTime = setInterval(function () { game.countDown() }, 1000);
     
     var game = {
 
@@ -54,7 +49,7 @@ $(document).ready(function () {
         },
 
         countDown: function () {
-            console.log('time', game.timeRemaining)
+           
             // Setting timer to minus 1 each time function is called
             game.timeRemaining--;
 
@@ -65,8 +60,6 @@ $(document).ready(function () {
             // creating an if statement to stop timer at 0.
             if (game.timeRemaining <= 0) {
 
-                // calling stopTimer function
-                // game.stopTimer();
                 trivia.checkAnswers();
                 // clearing out the timer at the stop of the game
                 $('#timer').empty();
@@ -79,12 +72,6 @@ $(document).ready(function () {
 
             clearInterval(this.setTime);
 
-            console.log('Stop Timer')
-            // game.showEnd();
-            // trivia.checkAnswers();
-
-            // running the checkAns function
-            // trivia.checkAnswers();
             $('#questionBox').hide();
         },
 
@@ -100,10 +87,6 @@ $(document).ready(function () {
             // clearing and hiding timer
             $('#timer').empty();
             $('#timer').hide();
-
-            console.log('Correct: ' + numCorrect)
-            console.log('Incorrect: ' + numIncorrect)
-            console.log('Unanswered: ' + numUnanswered)
 
             // displaying the amount of correct answers
             $('#correctAns').html('Correct Answers: ' + numCorrect);
@@ -182,10 +165,7 @@ $(document).ready(function () {
 
         },
     }
-    // FUZZY ↑↑↑↑↑↑
-
-
-
+   
     //  creating an array to hold questions and answer choices
     var questionBank = [
         {
@@ -215,8 +195,6 @@ $(document).ready(function () {
             correct: 'Noonien Soong'
         },
 
-
-
         {
             question: "Who did the borg name locutus",
             answers: ['Geordi la forge', 'Commander Riker', 'Captain Picard', 'Deanna Troi'],
@@ -229,11 +207,6 @@ $(document).ready(function () {
             correct: 'Lal'
         },
 
-        // {
-        //     question: "Who is Data's creator",
-        //     answers: ['Reginald Barclay', 'Guinan', 'Wesley Crusher', 'Noonien Soong'],
-        //     correct: 'Noonien Soong'
-        // },
     ]
     $('#doneButton').on('click', trivia.checkAnswers);
     $('#startButton').on('click', game.startTimer);
@@ -243,21 +216,6 @@ $(document).ready(function () {
 
 
 });
-
-
-
-
-
-// }
-
-// }
-
-// }
-
-// }
-
-
-
 
 
 
