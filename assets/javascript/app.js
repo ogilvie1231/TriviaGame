@@ -14,12 +14,10 @@ $(document).ready(function () {
         timeRemaining: 60,
         interval: null,
 
-        // using set time below makes the timer run immediately but clearInterval works 
-        // setTime: setInterval(function () { game.countDown() }, 1000),
-
         // Starting the timer, hiding the start page
         startTimer: function () {
             
+            console.log('timer: ' + game.timeRemaining)
             // using setTime below only runs when I start but clearInterval doesn't work
             game.interval = setInterval(game.countDown, 1000),
 
@@ -195,7 +193,7 @@ $(document).ready(function () {
         {
             question: "What race is Worf?",
             answers: ['Cardassian', 'Bajoran', 'Ferengi', 'Klingon'],
-            correct: 'Noonien Soong'
+            correct: 'Klingon'
         },
 
         {
